@@ -13,24 +13,26 @@
 
 int main(void)
 {
-	int hobby_1 = 0, hobby_2 = 0, hobby_3 = 0, final_hobby = 0, music_genre = 0,
-		artist = 0, drink_1 = 0, final_drink = 0;
+	int hobby = 0, final_hobby = 0, music_genre = 0,
+		artist = 0, drink = 0, final_drink = 0, foodplace = 0, final_food = 0,
+		activity = 0, final_activity = 0;
 
 	printf("Hello! I'm so glad you are using this program to try some new things!\n It's going to be pretty simple. You will be prompted, and based off your decisions, we will land on some new things for you to try!\n ");
 	printf("To start things out, let's pick a new hobby to try!\n");
 	printf("Here are some hobby options:\n Option 1: Cooking\n Option 2: Crochet\n Option 3: Hiking\n ");
 	printf("Now, from these options, enter the numerical digit which you most want to try: \n");
-	scanf("%d", &hobby_1);
+	scanf("%d", &hobby);
 	printf("Execellent! Now in this category, let's get a little more specific.\n");
 
 
 	// choosing exact new hobby
-	final_hobby = new_hobby(hobby_1);
+	final_hobby = new_hobby(hobby);
 
 	// print out the hobby 
-	finalized_hobby1(final_hobby, hobby_1);
-	finalized_hobby2(final_hobby, hobby_2);
-	finalized_hobby3(final_hobby, hobby_3);
+
+	finalized_hobby1(final_hobby, hobby);
+	finalized_hobby2(final_hobby, hobby);
+	finalized_hobby3(final_hobby, hobby);
 
 	// On to the music part
 	printf("Next, let's pick a new music genre to try!\n");
@@ -62,19 +64,57 @@ int main(void)
 	finalized_music15(music_genre, artist);
 	finalized_music16(music_genre, artist);
 
-	// On to the foodie part
+	// On to the drink part
 	printf("Next, let's pick a new drink to try!\n");
 	printf("Here are some options to narrow down:\n Option 1: Coffee\n Option 2: Boba\n Option 3: Juice\n");
 	printf("Now, from these options, enter the numerical digit which you most want to try: \n");
-	scanf("%d", &drink_1);
-	printf("Fantastic! Now in this category, let's get a little more specific.\n");
+	scanf("%d", &drink);
+	printf("Phenomenal! Now in this category, let's get a little more specific.\n");
 
 	// choosing exact new drink
-	final_drink = drink_time(drink_1);
+	final_drink = drink_time(drink);
 
 
+	// print out the drink 
+	finalized_drink1(final_drink, drink);
+	finalized_drink2(final_drink, drink);
+	finalized_drink3(final_drink, drink);
+	
+
+	// On to the foodie part
+	printf("Next, let's pick a new foodie place to try!\n");
+	printf("Here are some options to narrow down:\n Option 1: Sushi\n Option 2: Pizza\n Option 3: Greek\n Option 4: Soup\n Option 5: Breakfast\n");
+	printf("Now, from these options, enter the numerical digit which you most want to try: \n");
+	scanf("%d", &foodplace);
+	printf("Great! Now in this category, let's get a little more specific.\n");
+
+	// choosing exact new drink
+	final_food = foodie_time(foodplace);
+
+	// print out the food place 
+	finalized_food1(final_food, foodplace);
+	finalized_food2(final_food, foodplace);
+	finalized_food3(final_food, foodplace);
+	finalized_food4(final_food, foodplace);
+	finalized_food5(final_food, foodplace);
 
 
+	// On to the activity part
+	printf("Lastly, let's pick a new activity to try!\n");
+	printf("Here are some options to narrow down:\n Option 1: active activity\n Option 2: semi-sedentary activity\n Option 3: sedentary activity\n");
+	printf("Now, from these options, enter the numerical digit which you most want to try: \n");
+	scanf("%d", &activity);
+	printf("Great! Now in this category, let's get a little more specific.\n");
 
+	// choosing exact activity
+	final_activity = activity_time(activity);
+
+	// print out the activity place 
+	finalized_activity1(final_activity, activity);
+	finalized_activity2(final_activity, activity);
+	finalized_activity3(final_activity, activity);
+
+	// Final Notes to User
+	printf("I hope you have fun with your new experiences, I hope you take note of the suggestions!\n Feel free to run again when you want to try some more new things. :)");
 	return 0;
 }

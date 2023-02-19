@@ -7,7 +7,7 @@ int new_hobby(int hobby_1)
 	int final_hobby = 0;
 
 
-	do
+	if (hobby_1 == 1)
 	{
 		printf("Option 1: Make a homeade pizza \n");
 		printf("Option 2: Make a cool dip \n ");
@@ -16,9 +16,9 @@ int new_hobby(int hobby_1)
 		printf("Option 5: Make a quesadilla \n");
 		printf("Now, enter the numerical digit which you most want to try : \n");
 		scanf("%d", &final_hobby);
-	} while (hobby_1 == 1);
+	}
 
-	do
+	else if (hobby_1 == 2)
 	{
 		printf("Option 1: Make a pillow \n");
 		printf("Option 2: Make a stove mat \n ");
@@ -26,9 +26,9 @@ int new_hobby(int hobby_1)
 		printf("Option 4: Make a infinity scarf \n");
 		printf("Now, enter the numerical digit which you most want to try : \n");
 		scanf("%d", &final_hobby);
-	} while (hobby_1 == 2);
+	} 
 
-	do
+	else if (hobby_1 == 3)
 	{
 		printf("Option 1: Hike to a water fall \n");
 		printf("Option 2: Hike to a pond \n ");
@@ -36,7 +36,7 @@ int new_hobby(int hobby_1)
 		printf("Option 4: Hike to a Geocache \n");
 		printf("Now, enter the numerical digit which you most want to try : \n");
 		scanf("%d", &final_hobby);
-	} while (hobby_1 == 3);
+	}
 
 	return final_hobby;
 }
@@ -46,26 +46,23 @@ void finalized_hobby1(int final_hobby, int hobby_1)
 {
 	if (hobby_1 == 1 && final_hobby == 1)
 	{
-		printf("Your new hobby to try is cooking a homeade pizza!");
+		printf("Your new hobby to try is cooking a homeade pizza!\n\n");
 	}
-	if (hobby_1 == 1 && final_hobby == 2)
+	else if (hobby_1 == 1 && final_hobby == 2)
 	{
-		printf("Your new hobby to try is cooking a dip!");
+		printf("Your new hobby to try is cooking a dip!\n\n");
 	}
-	if (hobby_1 == 1 && final_hobby == 3)
+	else if (hobby_1 == 1 && final_hobby == 3)
 	{
-		printf("Your new hobby to try is cooking a pasta dish!");
+		printf("Your new hobby to try is cooking a pasta dish!\n\n");
 	}
-	if (hobby_1 == 1 && final_hobby == 4)
+	else if (hobby_1 == 1 && final_hobby == 4)
 	{
-		printf("Your new hobby to try is cooking a salad!");
+		printf("Your new hobby to try is cooking a salad!\n\n");
 	}
-	if (hobby_1 == 1 && final_hobby == 5)
+	else if (hobby_1 == 1 && final_hobby == 5)
 	{
-		printf("Your new hobby to try is cooking a quesadilla!");
-	}
-	else {
-		printf("");
+		printf("Your new hobby to try is cooking a quesadilla!\n\n");
 	}
 }
 
@@ -74,22 +71,19 @@ void finalized_hobby2(int final_hobby, int hobby_2)
 {
 	if (hobby_2 == 2 && final_hobby == 1)
 	{
-		printf("Your new hobby to try is crocheting a pillow!");
+		printf("Your new hobby to try is crocheting a pillow!\n\n");
 	}
 	if (hobby_2 == 2 && final_hobby == 2)
 	{
-		printf("Your new hobby to try is crocheting a stove mat!");
+		printf("Your new hobby to try is crocheting a stove mat!\n\n");
 	}
 	if (hobby_2 == 2 && final_hobby == 3)
 	{
-		printf("Your new hobby to try is crocheting a beanie!");
+		printf("Your new hobby to try is crocheting a beanie!\n\n");
 	}
 	if (hobby_2 == 2 && final_hobby == 4)
 	{
-		printf("Your new hobby to try is crocheting a scarf!");
-	}
-	else {
-		printf("");
+		printf("Your new hobby to try is crocheting a scarf!\n\n");
 	}
 }
 
@@ -98,19 +92,19 @@ void finalized_hobby3(int final_hobby, int hobby_3)
 {
 	if (hobby_3 == 3 && final_hobby == 1)
 	{
-		printf("Your new hobby to try is hiking to a waterfall!");
+		printf("Your new hobby to try is hiking to a waterfall!\n\n");
 	}
 	if (hobby_3 == 3 && final_hobby == 2)
 	{
-		printf("Your new hobby to try is hiking to a pond!");
+		printf("Your new hobby to try is hiking to a pond!\n\n");
 	}
 	if (hobby_3 == 3 && final_hobby == 3)
 	{
-		printf("Your new hobby to try is hiking to a forest!");
+		printf("Your new hobby to try is hiking to a forest!\n\n");
 	}
 	else if (hobby_3 == 3 && final_hobby == 4)
 	{
-		printf("Your new hobby to try is hiking to a geocache!");
+		printf("Your new hobby to try is hiking to a geocache!\n\n");
 	}
 }
 
@@ -123,7 +117,7 @@ int type_music(music_genre)
 {
 	int artist = 0;
 
-	do
+	if (music_genre == 1)
 	{
 		printf("Option 1: Rolling Stones\n");
 		printf("Option 2: Pink Floyd\n ");
@@ -134,9 +128,9 @@ int type_music(music_genre)
 		printf("Option 7: Red Hot Chili Peppers \n ");
 		printf("Now, enter the numerical digit which you most want to try : \n");
 		scanf("%d", &artist);
-	} while (music_genre == 1);
+	} 
 
-	do
+	if (music_genre == 2)
 	{
 		printf("Option 1: Drake\n");
 		printf("Option 2: 50 Cent\n ");
@@ -147,9 +141,9 @@ int type_music(music_genre)
 		printf("Option 7: Eminem\n ");
 		printf("Now, enter the numerical digit which you most want to try : \n");
 		scanf("%d", &artist);
-	} while (music_genre == 2);
+	} 
 
-	do
+	if (music_genre == 3)
 	{
 		printf("Option 1: George Strait\n");
 		printf("Option 2: Carrie Underwood\n ");
@@ -159,9 +153,9 @@ int type_music(music_genre)
 		printf("Option 6: Johnny Cash \n");
 		printf("Now, enter the numerical digit which you most want to try : \n");
 		scanf("%d", &artist);
-	} while (music_genre == 3);
+	} 
 
-	do
+	if(music_genre == 4)
 	{
 		printf("Option 1: Ludwig van Beethoven \n");
 		printf("Option 2: Wolfgang Amadeus Mozart\n ");
@@ -171,9 +165,9 @@ int type_music(music_genre)
 		printf("Option 6: Frederic Chopin\n");
 		printf("Now, enter the numerical digit which you most want to try : \n");
 		scanf("%d", &artist);
-	} while (music_genre == 4);
+	} 
 
-	do
+	if(music_genre == 5)
 	{
 		printf("Option 1: The Clash\n");
 		printf("Option 2: Black Flag\n ");
@@ -183,9 +177,9 @@ int type_music(music_genre)
 		printf("Option 6: Dead Kennedys \n");
 		printf("Now, enter the numerical digit which you most want to try : \n");
 		scanf("%d", &artist);
-	} while (music_genre == 5);
+	}
 
-	do
+	if(music_genre == 6)
 	{
 		printf("Option 1: Marvin Gaye\n");
 		printf("Option 2: James Brown\n ");
@@ -197,9 +191,9 @@ int type_music(music_genre)
 		printf("Option 8: Al Green\n ");
 		printf("Now, enter the numerical digit which you most want to try : \n");
 		scanf("%d", &artist);
-	} while (music_genre == 6);
+	}
 
-	do
+	if (music_genre == 7)
 	{
 		printf("Option 1: Aerosmith \n");
 		printf("Option 2: AC/DC\n ");
@@ -211,9 +205,9 @@ int type_music(music_genre)
 		printf("Option 8: Elton John\n ");
 		printf("Now, enter the numerical digit which you most want to try : \n");
 		scanf("%d", &artist);
-	} while (music_genre == 7);
+	} 
 
-	do
+	if(music_genre == 8)
 	{
 		printf("Option 1: The Smithes \n");
 		printf("Option 2: Artic Monkeys\n ");
@@ -223,9 +217,9 @@ int type_music(music_genre)
 		printf("Option 6: alt-J\n");
 		printf("Now, enter the numerical digit which you most want to try : \n");
 		scanf("%d", &artist);
-	} while (music_genre == 8);
+	} 
 
-	do
+	if (music_genre == 9)
 	{
 		printf("Option 1: Bee Gees \n");
 		printf("Option 2: Boney M. Sister Sledge\n ");
@@ -235,9 +229,9 @@ int type_music(music_genre)
 		printf("Option 6: KC and The Sunshine Band\n");
 		printf("Now, enter the numerical digit which you most want to try : \n");
 		scanf("%d", &artist);
-	} while (music_genre == 9);
+	}
 
-	do
+	if(music_genre == 10)
 	{
 		printf("Option 1: Louis Armstrong \n");
 		printf("Option 2: Billie Holiday \n ");
@@ -247,9 +241,9 @@ int type_music(music_genre)
 		printf("Option 6: Chet Baker\n");
 		printf("Now, enter the numerical digit which you most want to try : \n");
 		scanf("%d", &artist);
-	} while (music_genre == 10);
+	} 
 
-	do
+	if(music_genre == 11)
 	{
 		printf("Option 1: Ariana Grande\n");
 		printf("Option 2: Adele\n ");
@@ -261,9 +255,9 @@ int type_music(music_genre)
 		printf("Option 8: Bruno Mars\n ");
 		printf("Now, enter the numerical digit which you most want to try : \n");
 		scanf("%d", &artist);
-	} while (music_genre == 11);
+	} 
 
-	do
+	if (music_genre == 12)
 	{
 		printf("Option 1: Lionel Richie \n");
 		printf("Option 2: Beyonce\n ");
@@ -275,9 +269,9 @@ int type_music(music_genre)
 		printf("Option 8: Khalid\n ");
 		printf("Now, enter the numerical digit which you most want to try : \n");
 		scanf("%d", &artist);
-	} while (music_genre == 12);
+	}
 
-	do
+	if(music_genre == 13)
 	{
 		printf("Option 1: BTS\n");
 		printf("Option 2: EXO\n ");
@@ -289,9 +283,9 @@ int type_music(music_genre)
 		printf("Option 8: SUGA\n ");
 		printf("Now, enter the numerical digit which you most want to try : \n");
 		scanf("%d", &artist);
-	} while (music_genre == 13);
+	} 
 
-	do
+	if(music_genre == 14)
 	{
 		printf("Option 1: The Shadows\n");
 		printf("Option 2: Steve Vai \n ");
@@ -302,9 +296,9 @@ int type_music(music_genre)
 		printf("Option 7: Scale the Sumit \n ");
 		printf("Now, enter the numerical digit which you most want to try : \n");
 		scanf("%d", &artist);
-	} while (music_genre == 14);
+	} 
 
-	do
+	if(music_genre == 15)
 	{
 		printf("Option 1: Pearl Jam\n");
 		printf("Option 2: Weezer\n ");
@@ -316,10 +310,10 @@ int type_music(music_genre)
 		printf("Option 8: Green Day\n ");
 		printf("Now, enter the numerical digit which you most want to try : \n");
 		scanf("%d", &artist);
-	} while (music_genre == 15);
+	} 
 
 
-	do
+	if(music_genre == 16)
 	{
 		printf("Option 1: Bad Bunny\n");
 		printf("Option 2: J Balvin\n ");
@@ -331,7 +325,7 @@ int type_music(music_genre)
 		printf("Option 8: Celia Cruz\n ");
 		printf("Now, enter the numerical digit which you most want to try : \n");
 		scanf("%d", &artist);
-	} while (music_genre == 16);
+	} 
 
 
 	return artist;
@@ -342,34 +336,31 @@ void finalized_music1(int music_genre, int artist)
 {
 	if (music_genre == 1 && artist == 1)
 	{
-		printf("Your new artist to listen to is Rolling Stones!");
+		printf("Your new artist to listen to is Rolling Stones!\n\n");
 	}
 	if (music_genre == 1 && artist == 2)
 	{
-		printf("Your new artist to listen to is Pink Floyd!");
+		printf("Your new artist to listen to is Pink Floyd!\n\n");
 	}
 	if (music_genre == 1 && artist == 3)
 	{
-		printf("Your new artist to listen to is Queen!");
+		printf("Your new artist to listen to is Queen!\n\n");
 	}
 	if (music_genre == 1 && artist == 4)
 	{
-		printf("Your new artist to listen to is Beatles!");
+		printf("Your new artist to listen to is Beatles!\n\n");
 	}
 	if (music_genre == 1 && artist == 5)
 	{
-		printf("Your new artist to listen to is Metalica!");
+		printf("Your new artist to listen to is Metalica!\n\n");
 	}
 	if (music_genre == 1 && artist == 6)
 	{
-		printf("Your new artist to listen to is Led Zeplin!");
+		printf("Your new artist to listen to is Led Zeplin!\n\n");
 	}
 	if (music_genre == 1 && artist == 7)
 	{
-		printf("Your new artist to listen to is Red Hot Chili Peppers!");
-	}
-	else {
-		printf("");
+		printf("Your new artist to listen to is Red Hot Chili Peppers!\n\n");
 	}
 }
 
@@ -378,38 +369,35 @@ void finalized_music2(int music_genre, int artist)
 {
 	if (music_genre == 2 && artist == 1)
 	{
-		printf("Your new artist to listen to is Drake!");
+		printf("Your new artist to listen to is Drake!\n\n");
 	}
 	if (music_genre == 2 && artist == 2)
 	{
-		printf("Your new artist to listen to is 50 Cent");
+		printf("Your new artist to listen to is 50 Cent\n\n");
 	}
 	if (music_genre == 2 && artist == 3)
 	{
-		printf("Your new artist to listen to is Kendrick Lamar!");
+		printf("Your new artist to listen to is Kendrick Lamar!\n\n");
 	}
 	if (music_genre == 2 && artist == 4)
 	{
-		printf("Your new hobby to try is hiking to a geocache!");
+		printf("Your new hobby to try is hiking to a geocache!\n\n");
 	}
 	if (music_genre == 2 && artist == 5)
 	{
-		printf("Your new artist to listen to is Nicki Minaj!");
+		printf("Your new artist to listen to is Nicki Minaj!\n\n");
 	}
 	if (music_genre == 2 && artist == 6)
 	{
-		printf("Your new artist to listen to is Jay-Z!");
+		printf("Your new artist to listen to is Jay-Z!\n\n");
 	}
 	if (music_genre == 2 && artist == 7)
 	{
-		printf("YYour new artist to listen to is Tupac!");
+		printf("YYour new artist to listen to is Tupac!\n\n");
 	}
 	if (music_genre == 2 && artist == 8)
 	{
-		printf("Your new artist to listen to is Eminem!");
-	}
-	else {
-		printf("");
+		printf("Your new artist to listen to is Eminem!\n\n");
 	}
 }
 
@@ -417,30 +405,27 @@ void finalized_music3(int music_genre, int artist)
 {
 	if (music_genre == 3 && artist == 1)
 	{
-		printf("Your new artist to listen to is George Strait!");
+		printf("Your new artist to listen to is George Strait!\n\n");
 	}
 	if (music_genre == 3 && artist == 2)
 	{
-		printf("Your new artist to listen to is Carrie Underwood!");
+		printf("Your new artist to listen to is Carrie Underwood!\n\n");
 	}
 	if (music_genre == 3 && artist == 3)
 	{
-		printf("Your new artist to listen to is Luke Bryan!");
+		printf("Your new artist to listen to is Luke Bryan!\n\n");
 	}
 	if (music_genre == 3 && artist == 4)
 	{
-		printf("Your new artist to listen to is Tim McGraw!");
+		printf("Your new artist to listen to is Tim McGraw!\n\n");
 	}
 	if (music_genre == 3 && artist == 5)
 	{
-		printf("Your new artist to listen to is Shania Twain!");
+		printf("Your new artist to listen to is Shania Twain!\n\n");
 	}
 	if (music_genre == 3 && artist == 6)
 	{
-		printf("Johnny Cash!");
-	}
-	else {
-		printf("");
+		printf("Your new artist to listen to is Johnny Cash!\n\n");
 	}
 }
 
@@ -448,30 +433,27 @@ void finalized_music4(int music_genre, int artist)
 {
 	if (music_genre == 4 && artist == 1)
 	{
-		printf("Your new artist to listen to is Ludwig can Beethoven!");
+		printf("Your new artist to listen to is Ludwig can Beethoven!\n\n");
 	}
 	if (music_genre == 4 && artist == 2)
 	{
-		printf("Your new artist to listen to is Wolfgang Amadeus Mozart!");
+		printf("Your new artist to listen to is Wolfgang Amadeus Mozart!\n\n");
 	}
 	if (music_genre == 4 && artist == 3)
 	{
-		printf("Your new artist to listen to is Claude Debussy!");
+		printf("Your new artist to listen to is Claude Debussy!\n\n");
 	}
 	if (music_genre == 4 && artist == 4)
 	{
-		printf("Johannes Brahms!");
+		printf("Your new artist to listen to is Johannes Brahms!\n\n");
 	}
 	if (music_genre == 4 && artist == 5)
 	{
-		printf("Your new artist to listen to is Johann Bach!");
+		printf("Your new artist to listen to is Johann Bach!\n\n");
 	}
 	if (music_genre == 4 && artist == 6)
 	{
-		printf("Your new artist to listen to is Frederic Chopin!");
-	}
-	else {
-		printf("");
+		printf("Your new artist to listen to is Frederic Chopin!\n\n");
 	}
 }
 
@@ -479,30 +461,27 @@ void finalized_music5(int music_genre, int artist)
 {
 	if (music_genre == 5 && artist == 1)
 	{
-		printf("Your new artist to listen to is The Clash!");
+		printf("Your new artist to listen to is The Clash!\n\n");
 	}
 	if (music_genre == 5 && artist == 2)
 	{
-		printf("Your new artist to listen to is Black Flag");
+		printf("Your new artist to listen to is Black Flag!\n\n");
 	}
 	if (music_genre == 5 && artist == 3)
 	{
-		printf("Your new artist to listen to is Ramones!");
+		printf("Your new artist to listen to is Ramones!\n\n");
 	}
 	if (music_genre == 5 && artist == 4)
 	{
-		printf("Your new artist to listen to is Green Day!");
+		printf("Your new artist to listen to is Green Day!\n\n");
 	}
 	if (music_genre == 5 && artist == 5)
 	{
-		printf("Your new artist to listen to is Misfits!");
+		printf("Your new artist to listen to is Misfits!\n\n");
 	}
 	if (music_genre == 5 && artist == 6)
 	{
-		printf("Your new artist to listen to is Dead Kennedys!");
-	}
-	else {
-		printf("");
+		printf("Your new artist to listen to is Dead Kennedys!\n\n");
 	}
 }
 
@@ -510,38 +489,35 @@ void finalized_music6(int music_genre, int artist)
 {
 	if (music_genre == 6 && artist == 1)
 	{
-		printf("Your new artist to listen to is Marvin Gaye!");
+		printf("Your new artist to listen to is Marvin Gaye!\n\n");
 	}
 	if (music_genre == 6 && artist == 2)
 	{
-		printf("Your new artist to listen to is James Brown!");
+		printf("Your new artist to listen to is James Brown!\n\n");
 	}
 	if (music_genre == 6 && artist == 3)
 	{
-		printf("Your new artist to listen to is Aretha Franklin!");
+		printf("Your new artist to listen to is Aretha Franklin!\n\n");
 	}
 	if (music_genre == 6 && artist == 4)
 	{
-		printf("YYour new artist to listen to is Stevie Wonder!");
+		printf("YYour new artist to listen to is Stevie Wonder!\n\n");
 	}
 	if (music_genre == 6 && artist == 5)
 	{
-		printf("Your new artist to listen to is Sam Cooke!");
+		printf("Your new artist to listen to is Sam Cooke!\n\n");
 	}
 	if (music_genre == 6 && artist == 6)
 	{
-		printf("Your new artist to listen to is Smokey Robinson!");
+		printf("Your new artist to listen to is Smokey Robinson!\n\n");
 	}
 	if (music_genre == 6 && artist == 7)
 	{
-		printf("Your new artist to listen to is Ray Charles!");
+		printf("Your new artist to listen to is Ray Charles!\n\n");
 	}
 	if (music_genre == 6 && artist == 8)
 	{
-		printf("Your new artist to listen to is Al Green!");
-	}
-	else {
-		printf("");
+		printf("Your new artist to listen to is Al Green!\n\n");
 	}
 }
 
@@ -549,38 +525,35 @@ void finalized_music7(int music_genre, int artist)
 {
 	if (music_genre == 7 && artist == 1)
 	{
-		printf("Your new artist to listen to is Aerosmith!");
+		printf("Your new artist to listen to is Aerosmith!\n\n");
 	}
 	if (music_genre == 7 && artist == 2)
 	{
-		printf("Your new artist to listen to is AC/DC!");
+		printf("Your new artist to listen to is AC/DC!\n\n");
 	}
 	if (music_genre == 7 && artist == 3)
 	{
-		printf("Your new artist to listen to is Guns N'Roses!");
+		printf("Your new artist to listen to is Guns N'Roses!\n\n");
 	}
 	if (music_genre == 7 && artist == 4)
 	{
-		printf("Your new artist to listen to is Nirvana!");
+		printf("Your new artist to listen to is Nirvana!\n\n");
 	}
 	if (music_genre == 7 && artist == 5)
 	{
-		printf("Your new artist to listen to is Elvis Presley!");
+		printf("Your new artist to listen to is Elvis Presley!\n\n");
 	}
 	if (music_genre == 7 && artist == 6)
 	{
-		printf("Your new artist to listen to is Bon Jovi!");
+		printf("Your new artist to listen to is Bon Jovi!\n\n");
 	}
 	if (music_genre == 7 && artist == 7)
 	{
-		printf("Your new artist to listen to is Billy Joel!");
+		printf("Your new artist to listen to is Billy Joel!\n\n");
 	}
 	if (music_genre == 7 && artist == 8)
 	{
-		printf("Your new artist to listen to is Elton John!");
-	}
-	else {
-		printf("");
+		printf("Your new artist to listen to is Elton John!\n\n");
 	}
 }
 
@@ -588,30 +561,27 @@ void finalized_music8(int music_genre, int artist)
 {
 	if (music_genre == 8 && artist == 1)
 	{
-		printf("Your new artist to listen to is The Smithes!");
+		printf("Your new artist to listen to is The Smithes!\n\n");
 	}
 	if (music_genre == 8 && artist == 2)
 	{
-		printf("Your new artist to listen to is Arctic Monkeys!");
+		printf("Your new artist to listen to is Arctic Monkeys!\n\n");
 	}
 	if (music_genre == 8 && artist == 3)
 	{
-		printf("Your new artist to listen to is Modest Mouse!");
+		printf("Your new artist to listen to is Modest Mouse!\n\n");
 	}
 	if (music_genre == 8 && artist == 4)
 	{
-		printf("Your new artist to listen to is Florence + the Machines!");
+		printf("Your new artist to listen to is Florence + the Machines!\n\n");
 	}
 	if (music_genre == 8 && artist == 5)
 	{
-		printf("Your new artist to listen to is Radiohead!");
+		printf("Your new artist to listen to is Radiohead!\n\n");
 	}
 	if (music_genre == 8 && artist == 6)
 	{
-		printf("Your new artist to listen to is alt-J!");
-	}
-	else {
-		printf("");
+		printf("Your new artist to listen to is alt-J!\n\n");
 	}
 }
 
@@ -619,30 +589,27 @@ void finalized_music9(int music_genre, int artist)
 {
 	if (music_genre == 9 && artist == 1)
 	{
-		printf("Your new artist to listen to is Bee Gees!");
+		printf("Your new artist to listen to is Bee Gees!\n\n");
 	}
 	if (music_genre == 9 && artist == 2)
 	{
-		printf("Your new artist to listen to is Boney M. Sister Sledge!");
+		printf("Your new artist to listen to is Boney M. Sister Sledge!\n\n");
 	}
 	if (music_genre == 9 && artist == 3)
 	{
-		printf("Your new artist to listen to is Gloria Gaynor!");
+		printf("Your new artist to listen to is Gloria Gaynor!\n\n");
 	}
 	if (music_genre == 9 && artist == 4)
 	{
-		printf("Your new artist to listen to is Chic!");
+		printf("Your new artist to listen to is Chic!\n\n");
 	}
 	if (music_genre == 9 && artist == 5)
 	{
-		printf("Your new artist to listen to is Village People!");
+		printf("Your new artist to listen to is Village People!\n\n");
 	}
 	if (music_genre == 9 && artist == 6)
 	{
-		printf("Your new artist to listen to is KC and The Sunshine Band!");
-	}
-	else {
-		printf("");
+		printf("Your new artist to listen to is KC and The Sunshine Band!\n\n");
 	}
 }
 
@@ -650,30 +617,27 @@ void finalized_music10(int music_genre, int artist)
 {
 	if (music_genre == 10 && artist == 1)
 	{
-		printf("Your new artist to listen to is Louis Armstrong!");
+		printf("Your new artist to listen to is Louis Armstrong!\n\n");
 	}
 	if (music_genre == 10 && artist == 2)
 	{
-		printf("Your new artist to listen to is Billie Holiday!");
+		printf("Your new artist to listen to is Billie Holiday!\n\n");
 	}
 	if (music_genre == 10 && artist == 3)
 	{
-		printf("Your new artist to listen to is Nat King!");
+		printf("Your new artist to listen to is Nat King!\n\n");
 	}
 	if (music_genre == 10 && artist == 4)
 	{
-		printf("Your new artist to listen to is John Coltrane!");
+		printf("Your new artist to listen to is John Coltrane!\n\n");
 	}
 	if (music_genre == 10 && artist == 5)
 	{
-		printf("Your new artist to listen to is Ella Fitzgerald!");
+		printf("Your new artist to listen to is Ella Fitzgerald!\n\n");
 	}
 	if (music_genre == 10 && artist == 6)
 	{
-		printf("Your new artist to listen to is Chet Baker!");
-	}
-	else {
-		printf("");
+		printf("Your new artist to listen to is Chet Baker!\n\n");
 	}
 }
 
@@ -681,38 +645,35 @@ void finalized_music11(int music_genre, int artist)
 {
 	if (music_genre == 11 && artist == 1)
 	{
-		printf("Your new artist to listen to is Ariana Grande!");
+		printf("Your new artist to listen to is Ariana Grande!\n\n");
 	}
 	if (music_genre == 11 && artist == 2)
 	{
-		printf("Your new artist to listen to is Adele!");
+		printf("Your new artist to listen to is Adele!\n\n");
 	}
 	if (music_genre == 11 && artist == 3)
 	{
-		printf("YYour new artist to listen to is Harry Styles!");
+		printf("YYour new artist to listen to is Harry Styles!\n\n");
 	}
 	if (music_genre == 11 && artist == 4)
 	{
-		printf("Your new artist to listen to is Michael Jackson!");
+		printf("Your new artist to listen to is Michael Jackson!\n\n");
 	}
 	if (music_genre == 11 && artist == 5)
 	{
-		printf("Your new artist to listen to is Selena Gomez!");
+		printf("Your new artist to listen to is Selena Gomez!\n\n");
 	}
 	if (music_genre == 11 && artist == 6)
 	{
-		printf("Your new artist to listen to is Taylor Swift!");
+		printf("Your new artist to listen to is Taylor Swift!\n\n");
 	}
 	if (music_genre == 11 && artist == 7)
 	{
-		printf("Your new artist to listen to is Olivia Rodrigo!");
+		printf("Your new artist to listen to is Olivia Rodrigo!\n\n");
 	}
 	if (music_genre == 11 && artist == 8)
 	{
-		printf("Bruno Mars!");
-	}
-	else {
-		printf("");
+		printf("Your new artist to listen to is Bruno Mars!\n\n");
 	}
 }
 
@@ -720,42 +681,39 @@ void finalized_music12(int music_genre, int artist)
 {
 	if (music_genre == 12 && artist == 1)
 	{
-		printf("Your new artist to listen to is Lionel Richie!");
+		printf("Your new artist to listen to is Lionel Richie!\n\n");
 	}
 	if (music_genre == 12 && artist == 2)
 	{
-		printf("Your new artist to listen to is Beyonce!");
+		printf("Your new artist to listen to is Beyonce!\n\n");
 	}
 	if (music_genre == 12 && artist == 3)
 	{
-		printf("Your new artist to listen to is Stevie Wonder!");
+		printf("Your new artist to listen to is Stevie Wonder!\n\n");
 	}
 	if (music_genre == 12 && artist == 4)
 	{
-		printf("Your new artist to listen to is Tina Turner!");
+		printf("Your new artist to listen to is Tina Turner!\n\n");
 	}
 	if (music_genre == 12 && artist == 5)
 	{
-		printf("Your new artist to listen to is Giveon!");
+		printf("Your new artist to listen to is Giveon!\n\n");
 	}
 	if (music_genre == 12 && artist == 6)
 	{
-		printf("Your new artist to listen to is Prince!");
+		printf("Your new artist to listen to is Prince!\n\n");
 	}
 	if (music_genre == 12 && artist == 7)
 	{
-		printf("Your new artist to listen to is Steve Lacy!");
+		printf("Your new artist to listen to is Steve Lacy!\n\n");
 	}
 	if (music_genre == 12 && artist == 8)
 	{
-		printf("Your new artist to listen to is SZA!");
+		printf("Your new artist to listen to is SZA!\n\n");
 	}
 	if (music_genre == 12 && artist == 9)
 	{
-		printf("Your new artist to listen to is Khalid!");
-	}
-	else {
-		printf("");
+		printf("Your new artist to listen to is Khalid!\n\n");
 	}
 }
 
@@ -763,38 +721,35 @@ void finalized_music13(int music_genre, int artist)
 {
 	if (music_genre == 13 && artist == 1)
 	{
-		printf("Your new artist to listen to is BTS!");
+		printf("Your new artist to listen to is BTS!\n\n");
 	}
 	if (music_genre == 13 && artist == 2)
 	{
-		printf("Your new artist to listen to is EXO!");
+		printf("Your new artist to listen to is EXO!\n\n");
 	}
 	if (music_genre == 13 && artist == 3)
 	{
-		printf("Your new artist to listen to is BIGBANG!");
+		printf("Your new artist to listen to is BIGBANG!\n\n");
 	}
 	if (music_genre == 13 && artist == 4)
 	{
-		printf("Your new artist to listen to is TWICE!");
+		printf("Your new artist to listen to is TWICE!\n\n");
 	}
 	if (music_genre == 13 && artist == 5)
 	{
-		printf("Your new artist to listen to is Red Velvet!");
+		printf("Your new artist to listen to is Red Velvet!\n\n");
 	}
 	if (music_genre == 13 && artist == 6)
 	{
-		printf("Your new artist to listen to is BLACKPINK!");
+		printf("Your new artist to listen to is BLACKPINK!\n\n");
 	}
 	if (music_genre == 13 && artist == 7)
 	{
-		printf("Your new artist to listen to is IU!");
+		printf("Your new artist to listen to is IU!\n\n");
 	}
 	if (music_genre == 13 && artist == 8)
 	{
-		printf("Your new artist to listen to is SUGA!");
-	}
-	else {
-		printf("");
+		printf("Your new artist to listen to is SUGA!\n\n");
 	}
 }
 
@@ -802,30 +757,27 @@ void finalized_music14(int music_genre, int artist)
 {
 	if (music_genre == 14 && artist == 1)
 	{
-		printf("Your new artist to listen to is The Shadows!");
+		printf("Your new artist to listen to is The Shadows!\n\n");
 	}
 	if (music_genre == 14 && artist == 2)
 	{
-		printf("Your new artist to listen to is Steve Vai!");
+		printf("Your new artist to listen to is Steve Vai!\n\n");
 	}
 	if (music_genre == 14 && artist == 3)
 	{
-		printf("Your new artist to listen to is Penguin Cafe Orchestra!");
+		printf("Your new artist to listen to is Penguin Cafe Orchestra!\n\n");
 	}
 	if (music_genre == 14 && artist == 4)
 	{
-		printf("Your new artist to listen to is Liquid Tension Experiment!");
+		printf("Your new artist to listen to is Liquid Tension Experiment!\n\n");
 	}
 	if (music_genre == 14 && artist == 5)
 	{
-		printf("Your new artist to listen to is Animals as Leaders!");
+		printf("Your new artist to listen to is Animals as Leaders!\n\n");
 	}
 	if (music_genre == 14 && artist == 6)
 	{
-		printf("Your new artist to listen to is Scale the Summit!");
-	}
-	else {
-		printf("");
+		printf("Your new artist to listen to is Scale the Summit!\n\n");
 	}
 }
 
@@ -833,38 +785,35 @@ void finalized_music15(int music_genre, int artist)
 {
 	if (music_genre == 15 && artist == 1)
 	{
-		printf("Your new artist to listen to is Pearl Jam!");
+		printf("Your new artist to listen to is Pearl Jam!\n\n");
 	}
 	if (music_genre == 15 && artist == 2)
 	{
-		printf("Your new artist to listen to is Weezer!");
+		printf("Your new artist to listen to is Weezer!\n\n");
 	}
 	if (music_genre == 15 && artist == 3)
 	{
-		printf("Your new artist to listen to is The Killers!");
+		printf("Your new artist to listen to is The Killers!\n\n");
 	}
 	if (music_genre == 15 && artist == 4)
 	{
-		printf("Your new artist to listen to is Twenty-One Pilots!");
+		printf("Your new artist to listen to is Twenty-One Pilots!\n\n");
 	}
 	if (music_genre == 15 && artist == 5)
 	{
-		printf("Your new artist to listen to is My Chemical Romance!");
+		printf("Your new artist to listen to is My Chemical Romance!\n\n");
 	}
 	if (music_genre == 15 && artist == 6)
 	{
-		printf("Your new artist to listen to is Linkin Park!");
+		printf("Your new artist to listen to is Linkin Park!\n\n");
 	}
 	if (music_genre == 15 && artist == 7)
 	{
-		printf("Your new artist to listen to is The Cure!");
+		printf("Your new artist to listen to is The Cure!\n\n");
 	}
 	if (music_genre == 15 && artist == 8)
 	{
-		printf("Your new artist to listen to is Green Day!");
-	}
-	else {
-		printf("");
+		printf("Your new artist to listen to is Green Day!\n\n");
 	}
 }
 
@@ -872,69 +821,290 @@ void finalized_music16(int music_genre, int artist)
 {
 	if (music_genre == 16 && artist == 1)
 	{
-		printf("Your new artist to listen to is Bad Bunny!");
+		printf("Your new artist to listen to is Bad Bunny!\n\n");
 	}
 	if (music_genre == 16 && artist == 2)
 	{
-		printf("Your new artist to listen to is J Balvin!");
+		printf("Your new artist to listen to is J Balvin!\n\n");
 	}
 	if (music_genre == 16 && artist == 3)
 	{
-		printf("Your new artist to listen to is Selena!");
+		printf("Your new artist to listen to is Selena!\n\n");
 	}
 	if (music_genre == 16 && artist == 4)
 	{
-		printf("Your new artist to listen to is Marc Anthony!");
+		printf("Your new artist to listen to is Marc Anthony!\n\n");
 	}
 	if (music_genre == 16 && artist == 5)
 	{
-		printf("Your new artist to listen to is Enrique Iglesias!");
+		printf("Your new artist to listen to is Enrique Iglesias!\n\n");
 	}
 	if (music_genre == 16 && artist == 6)
 	{
-		printf("Your new artist to listen to is Luis Fonsi!");
+		printf("Your new artist to listen to is Luis Fonsi!\n\n");
 	}
 	if (music_genre == 16 && artist == 7)
 	{
-		printf("Your new artist to listen to is Gloria Estefan!");
+		printf("Your new artist to listen to is Gloria Estefan!\n\n");
 	}
 	if (music_genre == 16 && artist == 8)
 	{
-		printf("Your new artist to listen to is Celia Cruz!");
-	}
-	else {
-		printf("");
+		printf("Your new artist to listen to is Celia Cruz!\n\n");
 	}
 }
 
 int drink_time(drink_1)
 {
 	int final_drink = 0;
-	do
+	if(drink_1 == 1)
 	{
 		printf("Option 1: Zoe Coffeehouse\n");
 		printf("Option 2: Roost Coffeehouse\n ");
 		printf("Option 3: Pups & Cups Cafe\n ");
 		printf("Now, enter the numerical digit which you most want to try : \n");
 		scanf("%d", &final_drink);
-	} while (drink_1 == 1);
-	do
+	} 
+	if(drink_1 == 2)
 	{
-		printf("Option 1: Zoe Coffeehouse\n");
-		printf("Option 2: Roost Coffeehouse\n ");
-		printf("Option 3: Pups & Cups Cafe\n ");
+		printf("Option 1: Popo\n");
+		printf("Now, enter the numerical digit which you most want to try: \n");
+		scanf("%d", &final_drink);
+	} 
+	if(drink_1 == 3)
+	{
+		printf("Option 1: Palouse Juice\n");
+		printf("Option 2: Freshens\n ");
 		printf("Now, enter the numerical digit which you most want to try : \n");
 		scanf("%d", &final_drink);
-	} while (drink_1 == 1);
-	do
-	{
-		printf("Option 1: Zoe Coffeehouse\n");
-		printf("Option 2: Roost Coffeehouse\n ");
-		printf("Option 3: Pups & Cups Cafe\n ");
-		printf("Now, enter the numerical digit which you most want to try : \n");
-		scanf("%d", &final_drink);
-	} while (drink_1 == 1);
+	} 
 
 
-	return drink_1;
+	return final_drink;
+}
+
+
+void finalized_drink1(int final_drink, int drink_1)
+{
+	if (final_drink == 1 && drink_1 == 1)
+	{
+		printf("Your new drink to try is Zoe Coffeehouse's coffee!\n\n");
+	}
+	if (final_drink == 1 && drink_1 == 2)
+	{
+		printf("Your new drink to try is Roost Coffeehouse's coffee!\n\n");
+	}
+	if (final_drink == 1 && drink_1 == 3)
+	{
+		printf("Your new drink to try is Pups & Cups Cafe's coffee!\n\n");
+	}
+}
+
+void finalized_drink2(int final_drink, int drink_2)
+{
+	if (final_drink == 2 && drink_2 == 1)
+	{
+		printf("Your new drink to try is Popo's boba!\n\n");
+	}
+}
+
+void finalized_drink3(int final_drink, int drink_3)
+{
+	if (final_drink == 3 && drink_3 == 1)
+	{
+		printf("Your new drink to try is Palouse Juice's juice!\n\n");
+	}
+	if (final_drink == 3 && drink_3 == 2)
+	{
+		printf("Your new drink to try is Freshens!\n\n");
+	}
+}
+
+
+int foodie_time(foodplace)
+{
+	int final_food = 0;
+
+	if(foodplace == 1)
+	{
+		printf("Option 1: Tokyo Seoul\n");
+		printf("Option 2: Red Bento\n ");
+		printf("Now, enter the numerical digit which you most want to try : \n");
+		scanf("%d", &final_food);
+	} 
+
+	if(foodplace == 2)
+	{
+		printf("Option 1: Sellas Calzone & Pizza\n");
+		printf("Option 2: Porch Light Pizza\n ");
+		printf("Now, enter the numerical digit which you most want to try : \n");
+		scanf("%d", &final_food);
+	} 
+
+	if(foodplace == 3)
+	{
+		printf("Option 1: Yia Yia Nikkis\n");
+		printf("Option 2: The Black Cypress\n ");
+		printf("Now, enter the numerical digit which you most want to try : \n");
+		scanf("%d", &final_food);
+	} 
+
+	if(foodplace == 4)
+	{
+		printf("Option 1: O-Ramen\n");
+		printf("Option 2: Minhs\n ");
+		printf("Now, enter the numerical digit which you most want to try : \n");
+		scanf("%d", &final_food);
+	} 
+
+	if (foodplace == 6)
+	{
+		printf("Option 1: Old European Restaurant\n");
+		printf("Option 2: Crybaby Cafe\n ");
+		printf("Now, enter the numerical digit which you most want to try : \n");
+		scanf("%d", &final_food);
+	} 
+
+	return final_food;
+}
+
+void finalized_food1(int final_food, int foodplace)
+{
+	if (final_food == 1 && foodplace == 1)
+	{
+		printf("Your new food to try is sushi at Tokya Seoul!\n\n");
+	}
+	if (final_food == 1 && foodplace == 2)
+	{
+		printf("Your new food to try is sushi at Red Bento!\n\n");
+	}
+}
+void finalized_food2(int final_food, int foodplace)
+{
+	if (final_food == 2 && foodplace == 1)
+	{
+		printf("Your new food to try is pizza at Sellas Calzone & Pizza!\n\n");
+	}
+	if (final_food == 2 && foodplace == 2)
+	{
+		printf("Your new food to try is pizza at Porch Light Pizza!\n\n");
+	}
+}
+void finalized_food3(int final_food, int foodplace)
+{
+	if (final_food == 3 && foodplace == 1)
+	{
+		printf("Your new food to try is Greek food at Yia Yia Nikkis!\n\n");
+	}
+	if (final_food == 3 && foodplace == 2)
+	{
+		printf("Your new food to try is Greek food at The Black Cypress!\n\n");
+	}
+}
+void finalized_food4(int final_food, int foodplace)
+{
+	if (final_food == 4 && foodplace == 1)
+	{
+		printf("Your new food to try is soup at O-Ramen!\n\n");
+	}
+	if (final_food == 4 && foodplace == 2)
+	{
+		printf("Your new food to try is soup at Minhs!\n\n");
+	}
+}
+void finalized_food5(int final_food, int foodplace)
+{
+	if (final_food == 5 && foodplace == 1)
+	{
+		printf("Your new food to try is breakfast at Old European Restaurant!\n\n");
+	}
+	if (final_food == 5 && foodplace == 2)
+	{
+		printf("Your new food to try is breakfast at Crybaby Cafe!\n\n");
+	}
+}
+
+int activity_time(int activity)
+{
+	int final_activity = 0;
+
+	if(activity == 1)
+	{
+		printf("Option 1: Bill Chipman Walking trail\n");
+		printf("Option 2: Rec Pool\n ");
+		printf("Option 1: Palouse Ridge Golf Course\n");
+		printf("Now, enter the numerical digit which you most want to try : \n");
+		scanf("%d", &final_activity);
+	} 
+
+	if(activity == 2)
+	{
+		printf("Option 1: Art Museum\n");
+		printf("Option 2: Saturday Farmers Market (in Moscow ID)\n ");
+		printf("Option 3: Zeppos \n");
+		printf("Option 4: Sunshine Crafts and Flowers\n");
+		printf("Now, enter the numerical digit which you most want to try : \n");
+		scanf("%d", &final_activity);
+	} 
+
+	if(activity == 3)
+	{
+		printf("Option 1: Pullman Regional Theatre\n");
+		printf("Option 2: Terracotta Pottery Classes\n ");
+		printf("Now, enter the numerical digit which you most want to try : \n");
+		scanf("%d", &final_activity);
+	} 
+
+	return final_activity;
+}
+
+
+void finalized_activity1(int final_activity, int activity)
+{
+	if (final_activity == 1 && activity == 1)
+	{
+		printf("Your new active activity to try is Bill Chipman Walking trail!\n\n");
+	}
+	if (final_activity == 1 && activity == 2)
+	{
+		printf("Your new active activity to try is Rec Pool!\n\n");
+	}
+	if (final_activity == 1 && activity == 3)
+	{
+		printf("Your new active activity to try is Palouse Ridge Golf Course!\n\n");
+	}
+}
+
+
+
+void finalized_activity2(int final_activity, int activity)
+{
+	if (final_activity == 2 && activity == 1)
+	{
+		printf("Your new semi-sedentary activity to try is Art Museum !\n\n");
+	}
+	if (final_activity == 2 && activity == 2)
+	{
+		printf("Your new semi-sedentary activity to try is Saturday Farmers Market (in Moscow ID)!\n\n");
+	}
+	if (final_activity == 2 && activity == 3)
+	{
+		printf("Your new semi-sedentary activity to try is Zeppos!\n\n");
+	}
+	if (final_activity == 2 && activity == 4)
+	{
+		printf("Your new semi-sedentary activity to try is Sunshine Crafts and Flowers!\n\n");
+	}
+}
+
+
+void finalized_activity3(int final_activity, int activity)
+{
+	if (final_activity == 3 && activity == 1)
+	{
+		printf("Your new sedentary activity to try is Pullman Regional Theatre!\n\n");
+	}
+	if (final_activity == 3 && activity == 2)
+	{
+		printf("Your new sedentary activity to try is Terracotta Pottery Classes!\n\n");
+	}
 }
