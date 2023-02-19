@@ -42,79 +42,73 @@ int new_hobby(int hobby_1)
 }
 
 // prints the option for the first option hobby to file
-void finalized_hobby1(int final_hobby, int hobby_1)
+void finalized_hobby1(FILE* output_stream, int final_hobby, int hobby_1)
 {
 	if (hobby_1 == 1 && final_hobby == 1)
 	{
-		fprint("Your new hobby to try is cooking a homeade pizza!");
+		fprintf(output_stream, "Your new hobby to try is cooking a homeade pizza!");
 	}
 	if (hobby_1 == 1 && final_hobby == 2)
 	{
-		fprint("Your new hobby to try is cooking a dip!");
+		fprintf(output_stream, "Your new hobby to try is cooking a dip!");
 	}
 	if (hobby_1 == 1 && final_hobby == 3)
 	{
-		fprint("Your new hobby to try is cooking a pasta dish!");
+		fprintf(output_stream, "Your new hobby to try is cooking a pasta dish!");
 	}
 	if (hobby_1 == 1 && final_hobby == 4)
 	{
-		fprint("Your new hobby to try is cooking a salad!");
+		fprintf(output_stream, "Your new hobby to try is cooking a salad!");
 	}
 	if (hobby_1 == 1 && final_hobby == 5)
 	{
-		fprint("Your new hobby to try is cooking a quesadilla!");
+		fprintf(output_stream, "Your new hobby to try is cooking a quesadilla!");
 	}
-	else {
-		printf("");
-	}
+	
 }
 
 // prints the option for the second option hobby to file
-void finalized_hobby2(int final_hobby, int hobby_2)
+void finalized_hobby2(FILE* output_stream, int final_hobby, int hobby_2)
 {
 	if (hobby_2 == 2 && final_hobby == 1)
 	{
-		fprint("Your new hobby to try is crocheting a pillow!");
+		fprintf(output_stream, "Your new hobby to try is crocheting a pillow!");
 	}
 	if (hobby_2 == 2 && final_hobby == 2)
 	{
-		fprint("Your new hobby to try is crocheting a stove mat!");
+		fprintf(output_stream, "Your new hobby to try is crocheting a stove mat!");
 	}
 	if (hobby_2 == 2 && final_hobby == 3)
 	{
-		fprint("Your new hobby to try is crocheting a beanie!");
+		fprintf(output_stream, "Your new hobby to try is crocheting a beanie!");
 	}
 	if (hobby_2 == 2 && final_hobby == 4)
 	{
-		fprint("Your new hobby to try is crocheting a scarf!");
+		fprintf(output_stream, "Your new hobby to try is crocheting a scarf!");
 	}
-	else {
-		printf("");
-	}
+	
 }
 
 // prints the option for the third option hobby to file
-void finalized_hobby3(int final_hobby, int hobby_3)
+void finalized_hobby3(FILE* output_stream, int final_hobby, int hobby_3)
 {
 	if (hobby_3 == 3 && final_hobby == 1)
 	{
-		printf("Your new hobby to try is hiking to a waterfall!");
+		fprintf(output_stream, "Your new hobby to try is hiking to a waterfall!");
 	}
 	if (hobby_3 == 3 && final_hobby == 2)
 	{
-		printf("Your new hobby to try is hiking to a pond!");
+		fprintf(output_stream, "Your new hobby to try is hiking to a pond!");
 	}
 	if (hobby_3 == 3 && final_hobby == 3)
 	{
-		printf("Your new hobby to try is hiking to a forest!");
+		fprintf(output_stream, "Your new hobby to try is hiking to a forest!");
 	}
 	if (hobby_3 == 3 && final_hobby == 4)
 	{
-		printf("Your new hobby to try is hiking to a geocache!");
+		fprintf(output_stream, "Your new hobby to try is hiking to a geocache!");
 	}
-	else {
-		printf("");
-	}
+	
 }
 
 /* END HOBBY ZONE*/
@@ -122,10 +116,4 @@ void finalized_hobby3(int final_hobby, int hobby_3)
 
 /* START MUSIC ZONE */
 
-int type_music(music_genre)
-{
-	int artist = 0;
 
-
-	return artist;
-}
