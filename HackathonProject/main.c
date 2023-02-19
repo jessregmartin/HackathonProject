@@ -14,46 +14,14 @@
 int main(void)
 {
 	int hobby_1 = 0, hobby_2 = 0, hobby_3 = 0, final_hobby = 0, music_genre = 0,
-		artist = 0;
-
+		artist = 0, drink_1 = 0, final_drink = 0;
 
 	printf("Hello! I'm so glad you are using this program to try some new things!\n It's going to be pretty simple. You will be prompted, and based off your decisions, we will land on some new things for you to try!\n ");
 	printf("To start things out, let's pick a new hobby to try!\n");
 	printf("Here are some hobby options:\n Option 1: Cooking\n Option 2: Crochet\n Option 3: Hiking\n ");
 	printf("Now, from these options, enter the numerical digit which you most want to try: \n");
-	scanf("%d", hobby_1);
+	scanf("%d", &hobby_1);
 	printf("Execellent! Now in this category, let's get a little more specific.\n");
-	
-	do
-	{
-		printf("Option 1: Make a homeade pizza \n");
-		printf("Option 2: Make a cool dip \n ");
-		printf("Option 3: make a pasta dish \n ");
-		printf("Option 4: Make a salad \n");
-		printf("Option 5: Make a quesadilla \n");
-		printf("Now, enter the numerical digit which you most want to try : \n");
-		scanf("%d", &final_hobby);
-	} while (hobby_1 == 1);
-
-	do
-	{
-		printf("Option 1: Make a pillow \n");
-		printf("Option 2: Make a stove mat \n ");
-		printf("Option 3: make a beanie \n ");
-		printf("Option 4: Make a infinity scarf \n");
-		printf("Now, enter the numerical digit which you most want to try : \n");
-		scanf("%d", &final_hobby);
-	} while (hobby_1 == 2);
-
-	do
-	{
-		printf("Option 1: Hike to a water fall \n");
-		printf("Option 2: Hike to a pond \n ");
-		printf("Option 3: Hike to a forest \n ");
-		printf("Option 4: Hike to a Geocache \n");
-		printf("Now, enter the numerical digit which you most want to try : \n");
-		scanf("%d", &final_hobby);
-	} while (hobby_1 == 3);
 
 
 	// choosing exact new hobby
@@ -66,10 +34,44 @@ int main(void)
 
 	// On to the music part
 	printf("Next, let's pick a new music genre to try!\n");
-	printf("Here are some genre options:\n Option 1: Rock\n Option 2: Hip-Hop\n Option 3: Country\nOption 4: Classical\n Option 5: Punk\n Option 6: Soul\n Option 7: Classic Rock\n Option 8: Indie\n Option 9: Disco\n Option 10: Jazz\n Option 11: Pop\n Option 12: R&B\n Option 13: KPop\n Option 14: Instrumental\n");
+	printf("Here are some genre options:\n Option 1: Rock\n Option 2: Hip-Hop\n Option 3: Country\nOption 4: Classical\n Option 5: Punk\n Option 6: Soul\n Option 7: Classic Rock\n Option 8: Indie\n Option 9: Disco\n Option 10: Jazz\n Option 11: Pop\n Option 12: R&B\n Option 13: KPop\n Option 14: Instrumental\nOption 15: Alternative\n Option 16: Latin Music Rock");
 	printf("Now, from these options, enter the numerical digit which you most want to try: \n");
-	scanf("%d", music_genre);
+	scanf("%d", &music_genre);
 	printf("Fantastic! Now in this category, let's get a little more specific.\n");
+
+
+	// choosing exact new hobby
+	artist = type_music(music_genre);
+
+
+	// print out the hobby 
+	finalized_music1(music_genre, artist);
+	finalized_music2(music_genre, artist);
+	finalized_music3(music_genre, artist);
+	finalized_music4(music_genre, artist);
+	finalized_music5(music_genre, artist);
+	finalized_music6(music_genre, artist);
+	finalized_music7(music_genre, artist);
+	finalized_music8(music_genre, artist);
+	finalized_music9(music_genre, artist);
+	finalized_music10(music_genre, artist);
+	finalized_music11(music_genre, artist);
+	finalized_music12(music_genre, artist);
+	finalized_music13(music_genre, artist);
+	finalized_music14(music_genre, artist);
+	finalized_music15(music_genre, artist);
+	finalized_music16(music_genre, artist);
+
+	// On to the foodie part
+	printf("Next, let's pick a new drink to try!\n");
+	printf("Here are some options to narrow down:\n Option 1: Coffee\n Option 2: Boba\n Option 3: Juice\n");
+	printf("Now, from these options, enter the numerical digit which you most want to try: \n");
+	scanf("%d", &drink_1);
+	printf("Fantastic! Now in this category, let's get a little more specific.\n");
+
+	// choosing exact new drink
+	final_drink = drink_time(drink_1);
+
 
 
 
