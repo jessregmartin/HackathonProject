@@ -1,6 +1,8 @@
 #include "header.h"
 
-char new_hobby(int hobby_1)
+
+/* HOBBY ZONE*/
+int new_hobby(int hobby_1)
 {
 	int final_hobby = 0;
 
@@ -38,3 +40,89 @@ char new_hobby(int hobby_1)
 
 	return final_hobby;
 }
+
+// prints the option for the first option hobby to file
+void finalized_hobby1(FILE* output_stream, int final_hobby, int hobby_1)
+{
+	if (hobby_1 == 1 && final_hobby == 1)
+	{
+		fprintf(output_stream, "Your new hobby to try is cooking a homeade pizza!");
+	}
+	if (hobby_1 == 1 && final_hobby == 2)
+	{
+		fprintf(output_stream, "Your new hobby to try is cooking a dip!");
+	}
+	if (hobby_1 == 1 && final_hobby == 3)
+	{
+		fprintf(output_stream, "Your new hobby to try is cooking a pasta dish!");
+	}
+	if (hobby_1 == 1 && final_hobby == 4)
+	{
+		fprintf(output_stream, "Your new hobby to try is cooking a salad!");
+	}
+	if (hobby_1 == 1 && final_hobby == 5)
+	{
+		fprintf(output_stream, "Your new hobby to try is cooking a quesadilla!");
+	}
+	else
+	{
+		return 0;
+	}
+}
+
+// prints the option for the second option hobby to file
+void finalized_hobby2(FILE* output_stream, int final_hobby, int hobby_2)
+{
+	if (hobby_2 == 2 && final_hobby == 1)
+	{
+		fprintf(output_stream, "Your new hobby to try is crocheting a pillow!");
+	}
+	if (hobby_2 == 2 && final_hobby == 2)
+	{
+		fprintf(output_stream, "Your new hobby to try is crocheting a stove mat!");
+	}
+	if (hobby_2 == 2 && final_hobby == 3)
+	{
+		fprintf(output_stream, "Your new hobby to try is crocheting a beanie!");
+	}
+	if (hobby_2 == 2 && final_hobby == 4)
+	{
+		fprintf(output_stream, "Your new hobby to try is crocheting a scarf!");
+	}
+	else
+	{
+		return 0;
+	}
+}
+
+// prints the option for the third option hobby to file
+void finalized_hobby2(FILE* output_stream, int final_hobby, int hobby_3)
+{
+	if (hobby_3 == 3 && final_hobby == 1)
+	{
+		fprintf(output_stream, "Your new hobby to try is hiking to a waterfall!");
+	}
+	if (hobby_3 == 3 && final_hobby == 2)
+	{
+		fprintf(output_stream, "Your new hobby to try is hiking to a pond!");
+	}
+	if (hobby_3 == 3 && final_hobby == 3)
+	{
+		fprintf(output_stream, "Your new hobby to try is hiking to a forest!");
+	}
+	if (hobby_3 == 3 && final_hobby == 4)
+	{
+		fprintf(output_stream, "Your new hobby to try is hiking to a geocache!");
+	}
+	else
+	{
+		return 0;
+	}
+}
+
+/* END HOBBY ZONE*/
+
+
+/* START MUSIC ZONE */
+
+
